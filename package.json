@@ -1,0 +1,19 @@
+{
+  "name": "ml-test",
+  "version": "1.0.0",
+  "description": "mercado libre test",
+  "main": "server.js",
+  "scripts": {
+    "start": "noder server.js",
+    "server": "nodemon server.js"
+  },
+  "author": "mati simone",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.6"
+  }
+}
