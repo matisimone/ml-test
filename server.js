@@ -4,6 +4,8 @@ const items = require('./routes/api/items')
 
 const app = express();
 
+app.use(express.urlencoded());
+
 app.get('/', (req, res) => res.send('Hello'));
 
 //routes
