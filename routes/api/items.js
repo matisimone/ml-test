@@ -25,10 +25,11 @@ const parseItem = data => {
         amount: data.price,
         decimals: '???'
       },
-      picture: data.thumbnail,
+      picture: data.pictures[0].url,
       condition: data.condition,
       free_shipping: data.shipping.free_shipping,
       sold_quantity: data.sold_quantity,
+      permalink: data.permalink,
       description: ''
     }
   };
@@ -62,7 +63,8 @@ const parseItemList = data => {
       },
       picture: i.thumbnail,
       condition: i.condition,
-      free_shipping: i.shipping.free_shipping
+      free_shipping: i.shipping.free_shipping,
+      location: i.address.state_name
     });
   });
 
@@ -71,7 +73,7 @@ const parseItemList = data => {
 
 router.get('/:id', (req, res) => {
   const id = req.params.id;
-  axios
+  return axios
     .get(`${API_URL}${ITEMS}/${id}`)
     .then(response => {
       return Promise.resolve({
@@ -83,42 +85,27 @@ router.get('/:id', (req, res) => {
         .get(`${API_URL}${ITEMS}/${id}/description`)
         .then(description => {
           response.data.item.description = description.data.plain_text;
-          res.send(response);
+          res.json(response);
         })
         .catch(error => {
-          res.send(error.message);
+          console.log(error.message);
         });
     })
     .catch(error => {
-      res.send(error.message);
+      console.log(error.message);
     });
 });
 
-/* router.get('/:id/description', (req, res) => {
-  const id = req.params.id;
-  axios
-    .get(`${API_URL}{ITEMS}/${id}/description`)
-    .then(response => {
-      console.log('response:', response.data);
-      res.status(200);
-      res.send(response.data);
-    })
-    .catch(error => {
-      console.log(error.message);
-      res.send(error.message);
-    });
-}); */
-
 router.get('/', (req, res) => {
   const query = req.query.q;
-  axios
+  return axios
+    //.get(`${API_URL}${SITES}/MLA/search?q=${query}?offset=5&limit=4`)
     .get(`${API_URL}${SITES}/MLA/search?q=${query}`)
     .then(response => {
-      res.send(parseItemList(response.data));
+      res.json(parseItemList(response.data));
     })
     .catch(error => {
       console.log(error.message);
-      res.send(error.message);
     });
 });
 

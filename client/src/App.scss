@@ -1,0 +1,173 @@
+@import 'styles/variables';
+
+// general
+body {
+  background-color: $ml-ligth-grey;
+  padding-bottom: 48px;
+}
+
+hr {
+  display: block;
+  border: 0;
+  border-top: 1px solid $ml-ligth-grey;
+  margin: 0px;
+  padding: 0;
+}
+
+.loading {
+  background-image: url('./assets/loading.gif');
+  background-repeat: no-repeat;
+    padding: 100px 100px;
+    background-position: center;
+}
+
+// searchbar
+nav {
+  background-color: $ml-yellow;
+}
+
+// searchform
+.logo {
+  background-image: url('./assets/Logo_ML.png');
+  background-repeat: no-repeat;
+  padding: 23px 10px 15px 43px;
+  background-position: center;
+}
+
+.search-input {
+  width: 100%;
+  height: 36px;
+  font-size: 18px;
+  padding: 0px 0px 2px 16px;
+  margin-left: 30px;
+  border: none;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.search-button {
+  cursor: pointer;
+  padding: 10px 11px 2px 12px;
+  border: none;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.search-icon {
+  background-image: url('./assets/ic_Search.png');
+  background-repeat: no-repeat;
+  padding: 2px 9px;
+}
+
+// landing
+.landing {
+  background-color: $ml-ligth-grey;
+  height: 100%;
+}
+
+// breadcrum
+.breadcrum {
+  font-size: 14px;
+  color: $ml-dark-grey;
+  margin: 16px 0px 16px 0px;
+}
+
+// items
+a {
+  color: $ml-black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $ml-black;
+  text-decoration: none;
+}
+
+.item {
+  background-color: white;
+}
+
+.item-info {
+  padding-top: 32px;
+}
+
+.item-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.item-price {
+  font-size: 24px;
+  padding-bottom: 32px;
+}
+
+.shipping-icon {
+  background-image: url('./assets/ic_shipping.png');
+  background-repeat: no-repeat;
+  padding: 0px 10px 0px 30px;
+  background-position: center;
+}
+
+.item-name {
+  font-size: 18px;
+}
+
+.item-location {
+  font-size: 12px;
+  color: $ml-dark-grey;
+  padding: 64px 64px 0px 10px;
+}
+
+// item Detail
+.item-detail {
+  background-color: white;
+}
+
+.item-d-img {
+  width: 680px;
+  height: 680px;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.item-d-info {
+  margin-right: 32px;
+  padding-left: 16px;
+}
+
+.item-d-state {
+  font-size: 14px;
+  padding-top: 32px;
+}
+
+.item-d-name {
+  font-size: 24px;
+  font-weight: 700;
+  padding-top: 14px;
+}
+
+.item-d-price {
+  font-size: 46px;
+  padding: 32px 0px 32px 0px;
+}
+
+.item-d-button {
+  width: 100%;
+  margin-right: 32px;
+}
+
+.item-d-description-div {
+  padding-left: 32px;
+  width: 680px;
+}
+
+.item-d-description-title {
+  font-size: 28px;
+  padding-bottom: 32px;
+}
+
+.item-d-description {
+  font-size: 16px;
+  color: $ml-dark-grey;
+  padding-bottom: 32px;
+}

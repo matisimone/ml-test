@@ -2,3 +2,5 @@
     $ npm run start
 // run server nodemon
     $ npm run server
+// run server and client (concurrently)
+    $ npm run dev
