@@ -1,0 +1,52 @@
+.item-detail {
+  background-color: white;
+}
+
+.item-d-img {
+  width: 680px;
+  height: 680px;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.item-d-info {
+  margin-right: 32px;
+  padding-left: 16px;
+}
+
+.item-d-state {
+  font-size: 14px;
+  padding-top: 32px;
+}
+
+.item-d-name {
+  font-size: 24px;
+  font-weight: 700;
+  padding-top: 14px;
+}
+
+.item-d-price {
+  font-size: 46px;
+  padding: 32px 0px 32px 0px;
+}
+
+.item-d-button {
+  width: 100%;
+  margin-right: 32px;
+}
+
+.item-d-description-div {
+  padding-left: 32px;
+  width: 680px;
+}
+
+.item-d-description-title {
+  font-size: 28px;
+  padding-bottom: 32px;
+}
+
+.item-d-description {
+  font-size: 16px;
+  color: $ml-dark-grey;
+  padding-bottom: 32px;
+}

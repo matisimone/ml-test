@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Breadcrum from './Breadcrum';
 import Item from './Item';
-import axios from 'axios';
+import { getItemsByQuery } from '../api/Item';
 
 class ItemList extends Component {
   state = {
@@ -19,10 +19,8 @@ class ItemList extends Component {
 
     this.setState({ loading: true });
 
-    return axios
-      .get(`/api/items?q=${query}`)
+    getItemsByQuery(query)
       .then(response => {
-        console.log(response.data);
         this.setState({ loading: false, response: response.data });
       })
       .catch(error => {

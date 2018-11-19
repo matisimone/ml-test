@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Breadcrum from './Breadcrum';
-import axios from 'axios';
+import { getItemById } from '../api/Item';
 
 class ItemDetail extends Component {
   state = {
@@ -29,10 +29,7 @@ class ItemDetail extends Component {
 
     this.setState({ loading: true });
 
-    return axios
-      .get(`/api/items/${id}`)
-      .then(response => {
-        console.log(response.data);
+    getItemById(id).then(response => {
         const parsedData = this.parseData(response.data.data);
         this.setState({ loading: false });
         this.setState({ response: parsedData });

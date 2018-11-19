@@ -1,0 +1,46 @@
+a {
+  color: $ml-black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $ml-black;
+  text-decoration: none;
+}
+
+.item {
+  background-color: white;
+}
+
+.item-info {
+  padding-top: 32px;
+}
+
+.item-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.item-price {
+  font-size: 24px;
+  padding-bottom: 32px;
+}
+
+.shipping-icon {
+  background-image: url('./assets/ic_shipping.png');
+  background-repeat: no-repeat;
+  padding: 0px 10px 0px 30px;
+  background-position: center;
+}
+
+.item-name {
+  font-size: 18px;
+}
+
+.item-location {
+  font-size: 12px;
+  color: $ml-dark-grey;
+  padding: 64px 64px 0px 10px;
+}

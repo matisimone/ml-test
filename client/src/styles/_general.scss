@@ -1,0 +1,19 @@
+body {
+  background-color: $ml-ligth-grey;
+  padding-bottom: 48px;
+}
+
+hr {
+  display: block;
+  border: 0;
+  border-top: 1px solid $ml-ligth-grey;
+  margin: 0px;
+  padding: 0;
+}
+
+.loading {
+  background-image: url('./assets/loading.gif');
+  background-repeat: no-repeat;
+  padding: 100px 100px;
+  background-position: center;
+}
