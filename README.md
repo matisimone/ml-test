@@ -1,9 +1,17 @@
 # ml-test
+<p>
 1) From the root (server) of the project run the following command:
-    $ npm install
+   <li><ul>$ npm install</ul></li>
+</p>
+<p>
 2) Then you have to navigate to the client folder:
-    $ cd client
+    <li><ul>$ cd client</ul></li>
+</p>
+<p>
 3) After this (client folder) you have to run the following command:
-    $ npm isntall
+    <li><ul>$ npm isntall</ul></li>
+</p>
+<p>
 4) To run both, the server and the client, run from the root (server) the following command:
-    $ npm run dev
+    <li><ul>$ npm run dev</ul></li>
+</p>
